@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Teste</title>
+</head>
+
+<body class="bg-amber-50 font-[quicksand] text-xl text-gray-600 tracking-widest flex flex-col items-center py-8 px-16 min-h-screen w-full">
+    <!-- Header -->
+    <header class="grid grid-cols-4 items-center w-full">
+        <!-- Logo -->
+        <img src="./src/assets/images/logo-eleve.svg" alt="Logotipo do petshop Eleve" class="min-h-20 min-w-44">
+
+        <!-- Nav Bar -->
+        <ul class="flex gap-16 col-span-2 leading-none font-semibold justify-self-center">
+            <li class="nav-link"><a href="#">Home</a></li>
+            <li class="nav-link"><a href="#">Serviços</a></li>
+            <li class="nav-link"><a href="#">Preço</a></li>
+            <li class="nav-link"><a href="#">Contato</a></li>
+        </ul>
+
+        <!-- User Icon -->
+        <div class="w-10 h-10 bg-[var(--color-matrix-600)] rounded-full flex items-center justify-center transition cursor-pointer hover:bg-[var(--color-matrix-700)] justify-self-end">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-amber-50" viewBox="0 0 256 256"><path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>
+        </div>
+    </header>
+    
+    <!-- Main -->
+    <main class="pt-8">
+        <!-- Hero Section -->
+        <section class="grid grid-cols-2 w-full">
+            <!-- Hero Content -->
+            <div>
+                <h1 class="text-[80px] leading-[84px] font-bold text-gray-800">O seu pet é parte da nossa <span class="text-[var(--color-blue-chill-700)]">família</span></h1>
+                <hr class="my-6 w-40">
+                <p class="w-96 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin.</p>
+                <div class="flex gap-6">
+                    <button class="btn border-[var(--color-matrix-600)] hover:bg-[var(--color-matrix-600)] hover:text-amber-50">ver serviços</button>
+                    <button class="btn flex gap-2 bg-[var(--color-matrix-600)] text-amber-50 hover:bg-[var(--color-matrix-700)]">falar conosco <img src="./src/assets/icons/button-arrow.svg" alt="Seta do botão"></button>
+                </div> 
+            </div>
+            <!-- Hero Image -->
+            <div>
+                <img src="./src/assets/images/woman-with-dog.png" alt="Mulher com cachorro" class="w-full h-full object-cover">
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section class="mt-12 flex flex-col items-center gap-5">
+            <h2 class="text-6xl font-medium">Nossos serviços</h2>
+            <p class="w-2xl text-center mx-auto">Cuidado e carinho que elevam a felicidade do seu pet! Na eleve Petshop, oferecemos tudo o que seu pet precisa para viver com saúde, conforto e alegria!</p>
+            <!-- Card Group -->
+            <div class="grid grid-cols-3 w-4xl justify-center items-center">
+                <!-- Card 1 -->
+                <div class="flex flex-col items-center">
+                    <img src="./src/assets/images/woman-washing-dog.png" alt="Ícone de serviço 1" class="mb-4 w-58 rounded-2xl">
+                    <h3 class="text-xl font-semibold">Banho</h3>
+                </div>
+                <!-- Card 2 -->
+                <div class="flex flex-col items-center">
+                    <img src="./src/assets/images/woman-washing-dog.png" alt="Ícone de serviço 2" class="mb-4  w-64 rounded-2xl">
+                    <h3 class="text-xl font-semibold">Tosas</h3>
+                </div>
+                <!-- Card 3 -->
+                <div class="flex flex-col items-center">
+                    <img src="./src/assets/images/woman-washing-dog.png" alt="Ícone de serviço 3" class="mb-4 w-58 rounded-2xl">
+                    <h3 class="text-xl font-semibold">Hidratação</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preços -->
+        <section class="mt-12 flex flex-col items-center gap-5">
+            <h2 class="text-6xl font-medium mb-5">Preços</h2>
+            <!-- Card Group -->
+             <div class="grid grid-cols-3 w-full justify-between gap-12">
+                <!-- Card 1 -->
+                 <div class="p-8 border border-gray-800 rounded-3xl">
+                    <h3 class="text-4xl font-semibold text-gray-800 mb-2">Banho</h3>
+                    <p class="mb-4">Lorem ipsum dolor sit amet.</p>
+                    <h2 class="text-5xl font-semibold text-gray-800 mb-2">R$200,00</h2>
+                    <span class="font-semibold">Podendo variar por raça</span>
+                    <button class="btn flex gap-2 bg-[var(--color-matrix-600)] text-amber-50 w-full my-6 hover:bg-[var(--color-matrix-700)]">contratar serviço <img src="./src/assets/icons/button-arrow.svg" alt="Seta do botão"></button>
+                    <hr>
+                    <h4 class="mt-6 mb-2 text-gray-800 font-semibold">Inclusos:</h4>
+                    <ul class="flex flex-col gap-1">
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 1
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 2
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 3
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 4
+                        </li>
+                    </ul>
+                 </div>
+                <!-- Card 2 -->
+                <div class="p-8 border border-[var(--color-blue-chill-700)] rounded-3xl relative">
+                    <span class="p-1 absolute -top-4 right-1/8 bg-[var(--color-blue-chill-700)] text-amber-50 rounded-lg">Recomendado</span>
+                    <h3 class="text-4xl font-semibold text-gray-800 mb-2">Banho + Tosa</h3>
+                    <p class="mb-4">Lorem ipsum dolor sit amet.</p>
+                    <h2 class="text-5xl font-semibold text-gray-800 mb-2">R$400,00</h2>
+                    <span class="font-semibold">Podendo variar por raça</span>
+                    <button class="btn flex gap-2 bg-[var(--color-blue-chill-700)] text-amber-50 w-full my-6 hover:bg-[var(--color-blue-chill-800)]">contratar serviço <img src="./src/assets/icons/button-arrow.svg" alt="Seta do botão"></button>
+                    <hr>
+                    <h4 class="mt-6 mb-2 text-gray-800 font-semibold">Inclusos:</h4>
+                    <ul class="flex flex-col gap-1">
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 1
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 2
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 3
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 4
+                        </li>
+                    </ul>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-8 border border-gray-800 rounded-3xl">
+                    <h3 class="text-4xl font-semibold text-gray-800 mb-2">Banho</h3>
+                    <p class="mb-4">Lorem ipsum dolor sit amet.</p>
+                    <h2 class="text-5xl font-semibold text-gray-800 mb-2">R$200,00</h2>
+                    <span class="font-semibold">Podendo variar por raça</span>
+                    <button class="btn flex gap-2 bg-[var(--color-matrix-600)] text-amber-50 w-full my-6 hover:bg-[var(--color-matrix-700)]">contratar serviço <img src="./src/assets/icons/button-arrow.svg" alt="Seta do botão"></button>
+                    <hr>
+                    <h4 class="mt-6 mb-2 text-gray-800 font-semibold">Inclusos:</h4>
+                    <ul class="flex flex-col gap-1">
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 1
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 2
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 3
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="./src/assets/icons/circle-list.svg" alt="Ícone de círculo" class="w-4 h-4">
+                            Item 4
+                        </li>
+                    </ul>
+                </div>
+             </div>
+        </section>
+
+        <!-- Contato -->
+         <section class="bg-[url('/src/assets/images/bg-contact.svg')] bg-cover bg-no-repeat absolute w-full h-full mt-12 left-0 flex items-center justify-center">
+            <img src="./src/assets/images/toy-dog.png" alt="Imagem de um cachorro de brinquedo" class="mt-20 -ml-20">
+            <div class="w-2/6">
+                <h2 class="text-6xl font-medium text-gray-800">Se interessou?</h2>
+                <p class="my-5">Deixe seu número ou fale direto conosco pelo WhatsApp!</p>
+                <input type="tel" name="telefone_cliente" id="telefone_cliente" placeholder="(xx) xxxxx-xxxx" class="bg-amber-50 pl-5 p-1 rounded-3xl w-full">
+                <button class="btn flex gap-2 border-none bg-[var(--color-blue-chill-700)] text-amber-50 my-6 w-full hover:bg-[var(--color-blue-chill-800)]">enviar número</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     
+</body>
+</html>

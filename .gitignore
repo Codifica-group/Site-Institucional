@@ -1,0 +1,11 @@
+# Dependências do Node (node_modules)
+node_modules/
+
+# IDE/Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos gerados pelo Tailwind
+.tailwindcss
